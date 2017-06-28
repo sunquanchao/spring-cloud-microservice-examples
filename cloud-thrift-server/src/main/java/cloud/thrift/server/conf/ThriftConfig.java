@@ -49,7 +49,7 @@ public class ThriftConfig {
         return server;
     }
 
-    @PostConstruct
+    @PostConstruct //@PostConstruct
     public void init(){
         executor.execute(new Runnable() {
             @Override

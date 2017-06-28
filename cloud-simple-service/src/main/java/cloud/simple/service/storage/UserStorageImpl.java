@@ -32,5 +32,6 @@ public class UserStorageImpl implements UserStorage {
     @Override
     public List<User> findAll() {
         return jdbcTemplate.query("select * from user ",USER_ROW_MAPPER);
+        //return jdbcTemplate.query("select * from user where username like '%sqc%' ",USER_ROW_MAPPER);
     }
 }

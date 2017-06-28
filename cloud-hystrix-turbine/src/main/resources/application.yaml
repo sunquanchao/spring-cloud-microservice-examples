@@ -1,6 +1,4 @@
-
-
-
 #turbine:
 #  appConfig: cloud-simple-ui
-#  clusterNameExpression: new String('default') #http://stackoverflow.com/questions/28365202/spring-boot-eureka-server-hystrix-with-turbine-empty-turbine-stream
+#  clusterNameExpression: new String('default') 
+#http://stackoverflow.com/questions/28365202/spring-boot-eureka-server-hystrix-with-turbine-empty-turbine-stream

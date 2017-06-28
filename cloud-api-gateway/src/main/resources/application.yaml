@@ -8,6 +8,9 @@ zuul.routes.api-a.serviceId: cloud-simple-service
 zuul.routes.api-b.path: /cloud-simple-serviceB/**
 zuul.routes.api-b.serviceId: cloud-simple-serviceB
 
+#zuul.routes.api-c.path: /cloud-simple-serviceC/**
+#zuul.routes.api-c.serviceId: cloud-simple-serviceC
+
 zuul.routes.api-ui.path: /cloud-simple-ui/**
 zuul.routes.api-ui.serviceId: cloud-simple-ui
 
@@ -19,3 +22,6 @@ spring:
   sleuth:
     sampler:
       percentage: 1.0
+  rabbitmq:
+    host: localhost
+      
