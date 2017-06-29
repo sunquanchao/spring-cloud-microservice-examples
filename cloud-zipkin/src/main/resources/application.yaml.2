@@ -1,0 +1,20 @@
+server.port: 9411
+spring:
+  rabbitmq:
+    host: localhost
+
+#  datasource:
+#    schema: classpath:/zipkin-schema.sql
+#    url: jdbc:mysql://127.0.0.1/zipkin
+#    username: root
+#    password: 123456
+    # Switch this on to create the schema on startup:
+#    initialize: false
+#    continueOnError: true
+  sleuth:
+    enabled: true
+  application:
+    name: cloud-zipkin
+zipkin:
+  store:
+   type: mem

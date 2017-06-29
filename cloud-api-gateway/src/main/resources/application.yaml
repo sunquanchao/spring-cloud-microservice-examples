@@ -5,8 +5,8 @@ server.port: 5555
 zuul.routes.api-a.path: /cloud-simple-service/**
 zuul.routes.api-a.serviceId: cloud-simple-service
 
-zuul.routes.api-b.path: /cloud-simple-serviceB/**
-zuul.routes.api-b.serviceId: cloud-simple-serviceB
+#zuul.routes.api-b.path: /cloud-simple-serviceB/**
+#zuul.routes.api-b.serviceId: cloud-simple-serviceB
 
 #zuul.routes.api-c.path: /cloud-simple-serviceC/**
 #zuul.routes.api-c.serviceId: cloud-simple-serviceC
