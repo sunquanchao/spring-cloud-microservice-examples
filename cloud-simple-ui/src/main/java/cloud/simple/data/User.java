@@ -6,11 +6,17 @@
  */
 package cloud.simple.data;
 
+import java.io.Serializable;
+
 /**
  * @author zhangpeng
  */
-public class User {
+public class User implements Serializable{
 
+    /**
+     * 
+     */
+    private static final long serialVersionUID = 1L;
     private int id;
     private String username;
     public String getUsername() {
