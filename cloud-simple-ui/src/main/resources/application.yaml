@@ -1,6 +1,45 @@
 spring.zipkin.baseUrl: http://localhost:9411
 spring.zipkin.enabled: true
-spring:
-  sleuth:
-    sampler:
-      percentage: 1.0
+#spring:
+#  sleuth:
+#    sampler:
+#      percentage: 1.0
+
+
+
+
+project:
+  jenkins:
+    envs: dev,test,pre,prod
+    dev:
+      server-uri: http://10.19.9.100:8080/jenkins/   #--jenkins服务的地址，端口默认8080
+      username: sunquanchao    #--jenkins账号
+      password: Sqc123456   #--jenkins密码
+      tunnel-job-name: test_cloud_gofun-ms-sts-service
+      client-job-name: test_cloud_gofun-ms-sts-service
+      tunnel-server-url: http://172.17.20.10:8558/actuator/arthas
+      tunnel-server-ip: 172.17.20.10
+    test:
+      server-uri: http://10.19.9.100:8080/jenkins/   #--jenkins服务的地址，端口默认8080
+      username: sunquanchao    #--jenkins账号
+      password: Sqc123456   #--jenkins密码
+      tunnel-job-name: test_cloud_gofun-ms-sts-service
+      client-job-name: test_cloud_gofun-ms-sts-service
+      tunnel-server-url: http://172.17.20.10:8558/actuator/arthas
+      tunnel-server-ip: 172.17.20.10
+    pre:
+      server-uri: http://10.0.1.5:8080/jenkins/   #--jenkins服务的地址，端口默认8080
+      username: sunquanchao    #--jenkins账号
+      password: Sqc123456   #--jenkins密码
+      tunnel-job-name: preprod_gofun-ms-sts-service
+      client-job-name: preprod_gofun-ms-sts-service
+      tunnel-server-url: http://172.17.20.10:8558/actuator/arthas
+      tunnel-server-ip: 172.17.20.10
+    prod:
+      server-uri: http://10.0.1.5:8080/jenkins/   #--jenkins服务的地址，端口默认8080
+      username: sunquanchao    #--jenkins账号
+      password: Sqc123456   #--jenkins密码
+      tunnel-job-name: preprod_gofun-ms-sts-service
+      client-job-name: preprod_gofun-ms-sts-service
+      tunnel-server-url: http://172.17.20.10:8558/actuator/arthas
+      tunnel-server-ip: 172.17.20.10

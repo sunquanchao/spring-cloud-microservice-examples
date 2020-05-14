@@ -1,4 +1,4 @@
-package com.gofun.ms.api.manage.common.config;
+package cloud.simple.config;
 
 import com.offbytwo.jenkins.JenkinsServer;
 import com.offbytwo.jenkins.client.JenkinsHttpClient;
@@ -24,12 +24,12 @@ public class JenkinsConfiguration {
     /*为jenkinsProperties注入配置值，也可以在jenkinsProperties上添加Component注解和ConfigurationProperties(prefix="project.jenkins")注解来实现注入功能*/
     @Bean(name = "jenkinsProperties")
     public JenkinsProperties jenkinsProperties(
-            @Value("${project.jenkins.default.server-uri}") String serverUri,
-            @Value("${project.jenkins.default.username}") String username,
-            @Value("${project.jenkins.default.password}") String password,
-            @Value("${project.jenkins.default.client-job-name}") String clientJobName,
-            @Value("${project.jenkins.default.tunnel-job-name}") String tunnelJobName,
-            @Value("${project.jenkins.default.tunnel-server-url}") String tunnelServerUrl) {
+            @Value("${project.jenkins.dev.server-uri}") String serverUri,
+            @Value("${project.jenkins.dev.username}") String username,
+            @Value("${project.jenkins.dev.password}") String password,
+            @Value("${project.jenkins.dev.client-job-name}") String clientJobName,
+            @Value("${project.jenkins.dev.tunnel-job-name}") String tunnelJobName,
+            @Value("${project.jenkins.dev.tunnel-server-url}") String tunnelServerUrl) {
         JenkinsProperties jenkinsProperties = new JenkinsProperties();
         jenkinsProperties.setServerUri(serverUri);
         jenkinsProperties.setUsername(username);

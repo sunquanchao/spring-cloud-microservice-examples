@@ -1,4 +1,4 @@
-package com.gofun.ms.api.manage.common;
+package cloud.simple.web;
 
 /**
  * @author Mackchao.Sun
@@ -18,14 +18,14 @@ public class JekinsResp {
 
     private  String jobName;
 
-    private  String tunnelUrl;
+    private  String tunnelServerUrl;
 
-    public String getTunnelUrl() {
-        return tunnelUrl;
+    public String getTunnelServerUrl() {
+        return tunnelServerUrl;
     }
 
-    public void setTunnelUrl(String tunnelUrl) {
-        this.tunnelUrl = tunnelUrl;
+    public void setTunnelServerUrl(String tunnelServerUrl) {
+        this.tunnelServerUrl = tunnelServerUrl;
     }
 
     public String getJobName() {

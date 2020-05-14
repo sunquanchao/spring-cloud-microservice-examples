@@ -1,4 +1,4 @@
-package com.gofun.ms.api.manage.common.config;
+package cloud.simple.config;
 
 /**
  * @author Mackchao.Sun
